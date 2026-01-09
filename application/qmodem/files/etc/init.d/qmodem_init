@@ -10,7 +10,7 @@ start_service() {
     config_foreach _mk_rundir modem-device
     config_get block_auto_probe main block_auto_probe 0
     config_get enable_pcie_scan main enable_pcie_scan 0
-    config_get enable_usb_scan main enable_usb_scan 0
+    config_get enable_usb_scan main enable_usb_scan 1
     config_get try_preset_usb main try_preset_usb 1
     config_get try_preset_pcie main try_preset_pcie 0
     #once enabled, skip all check or scan
